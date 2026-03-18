@@ -19,7 +19,7 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-lg transition-all duration-300">
-      <nav className="container-custom py-0">
+      <nav className="w-full px-6 lg:px-12">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center -my-8 py-0 flex-shrink-0">
             <Image 
@@ -32,12 +32,12 @@ export default function Header() {
             />
           </Link>
 
-          <div className="hidden lg:flex items-center space-x-8 ml-auto">
+          <div className="hidden lg:flex items-center space-x-12">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`font-medium transition-colors duration-300 ${
+                className={`text-base font-bold tracking-wide transition-colors duration-300 ${
                   pathname === link.href
                     ? "text-orange-500"
                     : "text-navy-700 hover:text-orange-500"
@@ -55,7 +55,7 @@ export default function Header() {
           </div>
 
           <button
-            className="lg:hidden ml-auto"
+            className="lg:hidden"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >

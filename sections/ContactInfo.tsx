@@ -1,3 +1,7 @@
+"use client";
+
+import FadeIn from "@/components/FadeIn";
+
 export default function ContactInfo() {
   const offices = [
     {
@@ -9,7 +13,8 @@ export default function ContactInfo() {
   ];
 
   return (
-    <div className="space-y-8">
+    <FadeIn delay={0.1}>
+      <div className="space-y-8">
       <div className="bg-white p-8 rounded-xl border border-gray-200">
         <h2 className="text-3xl font-bold text-navy-800 mb-6">Contact Information</h2>
         
@@ -79,5 +84,6 @@ export default function ContactInfo() {
         </div>
       </div>
     </div>
+    </FadeIn>
   );
 }

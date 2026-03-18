@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import FadeIn from "@/components/FadeIn";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -25,7 +26,8 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="bg-white p-8 rounded-xl border border-gray-200">
+    <FadeIn>
+      <div className="bg-white p-8 rounded-xl border border-gray-200">
       <h2 className="text-3xl font-bold text-navy-800 mb-6">Send us a Message</h2>
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
@@ -134,5 +136,6 @@ export default function ContactForm() {
         </button>
       </form>
     </div>
+    </FadeIn>
   );
 }

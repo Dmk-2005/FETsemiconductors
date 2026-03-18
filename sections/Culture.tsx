@@ -1,3 +1,5 @@
+import FadeIn from "@/components/FadeIn";
+
 export default function Culture() {
   const values = [
     {
@@ -41,22 +43,24 @@ export default function Culture() {
   return (
     <section className="section-padding bg-white">
       <div className="container-custom">
-        <div className="text-center mb-16">
+        <FadeIn className="text-center mb-8">
           <h2 className="heading-lg text-navy-800 mb-4">Why FET Semiconductors?</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Experience a workplace culture that empowers you to do your best work
           </p>
-        </div>
+        </FadeIn>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {values.map((value, index) => (
-            <div key={index} className="text-center">
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-orange-100 rounded-full text-orange-500 mb-4">
-                {value.icon}
+            <FadeIn key={index} delay={index * 0.1}>
+              <div className="text-center">
+                <div className="inline-flex items-center justify-center w-20 h-20 bg-orange-100 rounded-full text-orange-500 mb-4">
+                  {value.icon}
+                </div>
+                <h3 className="text-xl font-bold text-navy-800 mb-3">{value.title}</h3>
+                <p className="text-gray-600">{value.description}</p>
               </div>
-              <h3 className="text-xl font-bold text-navy-800 mb-3">{value.title}</h3>
-              <p className="text-gray-600">{value.description}</p>
-            </div>
+            </FadeIn>
           ))}
         </div>
       </div>

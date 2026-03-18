@@ -1,6 +1,6 @@
 export default function ContactHero() {
   return (
-    <section className="relative pt-32 pb-20 bg-gradient-navy">
+    <section className="relative pt-32 pb-6 bg-gradient-navy">
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-1/2 transform -translate-x-1/2 w-96 h-96 bg-orange-500 rounded-full blur-3xl"></div>
       </div>

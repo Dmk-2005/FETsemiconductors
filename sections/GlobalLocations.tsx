@@ -51,9 +51,9 @@ export default function GlobalLocations() {
   ];
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-10 lg:py-14 bg-white">
       <div className="container-custom">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <h2 className="text-4xl lg:text-5xl font-bold text-navy-800 mb-6">
             Global Presence, Local Expertise
           </h2>

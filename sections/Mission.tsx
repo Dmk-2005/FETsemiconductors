@@ -1,3 +1,5 @@
+import FadeIn from "@/components/FadeIn";
+
 export default function Mission() {
   const values = [
     {
@@ -39,45 +41,49 @@ export default function Mission() {
   ];
 
   return (
-    <section className="section-padding bg-white">
+    <section className="py-10 lg:py-14 bg-white">
       <div className="container-custom">
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
-          <div>
+        <div className="grid lg:grid-cols-2 gap-16 items-center mb-12">
+          <FadeIn>
             <h2 className="heading-lg text-navy-800 mb-6">Our Mission</h2>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              To empower innovation through cutting-edge semiconductor solutions that drive 
+              To empower innovation through cutting-edge semiconductor solutions that drive
               technological advancement and create lasting value for our clients and partners.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              We are committed to delivering excellence in every project, fostering long-term 
+              We are committed to delivering excellence in every project, fostering long-term
               partnerships, and contributing to a more connected and technologically advanced world.
             </p>
-          </div>
-          <div className="bg-gradient-to-br from-navy-700 to-navy-900 p-12 rounded-2xl text-white">
-            <h3 className="text-3xl font-bold mb-6">Our Vision</h3>
-            <p className="text-lg text-gray-300 leading-relaxed">
-              To be the global leader in semiconductor innovation, recognized for our technical 
-              excellence, customer-centric approach, and commitment to sustainable technology solutions.
-            </p>
-          </div>
+          </FadeIn>
+          <FadeIn delay={0.15}>
+            <div className="bg-gradient-to-br from-navy-700 to-navy-900 p-12 rounded-2xl text-white">
+              <h3 className="text-3xl font-bold mb-6">Our Vision</h3>
+              <p className="text-lg text-gray-300 leading-relaxed">
+                To be the global leader in semiconductor innovation, recognized for our technical
+                excellence, customer-centric approach, and commitment to sustainable technology solutions.
+              </p>
+            </div>
+          </FadeIn>
         </div>
 
-        <div className="text-center mb-12">
+        <FadeIn className="text-center mb-10">
           <h2 className="heading-lg text-navy-800 mb-4">Our Core Values</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             The principles that guide everything we do
           </p>
-        </div>
+        </FadeIn>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {values.map((value, index) => (
-            <div key={index} className="text-center">
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-orange-100 rounded-full text-orange-500 mb-4">
-                {value.icon}
+            <FadeIn key={index} delay={index * 0.1}>
+              <div className="text-center">
+                <div className="inline-flex items-center justify-center w-20 h-20 bg-orange-100 rounded-full text-orange-500 mb-4">
+                  {value.icon}
+                </div>
+                <h3 className="text-xl font-bold text-navy-800 mb-3">{value.title}</h3>
+                <p className="text-gray-600">{value.description}</p>
               </div>
-              <h3 className="text-xl font-bold text-navy-800 mb-3">{value.title}</h3>
-              <p className="text-gray-600">{value.description}</p>
-            </div>
+            </FadeIn>
           ))}
         </div>
       </div>

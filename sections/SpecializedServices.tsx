@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import FadeIn from "@/components/FadeIn";
 
 export default function SpecializedServices() {
   const services = [
@@ -45,42 +48,39 @@ export default function SpecializedServices() {
   ];
 
   return (
-    <section className="py-20 lg:py-28 bg-gradient-to-br from-gray-50 to-gray-100">
+    <section className="py-10 lg:py-14 bg-gradient-to-br from-gray-50 to-gray-100">
       <div className="container-custom">
-        <div className="text-center mb-16">
+        <FadeIn className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-navy-800 mb-4">
             Our Specialized Semicon Services
           </h2>
-        </div>
+        </FadeIn>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
-            <Link
-              key={index}
-              href={`/services/${service.slug}`}
-              className="group relative bg-white/80 backdrop-blur-sm p-8 rounded-3xl border border-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer block"
-              style={{
-                background: 'linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.7) 100%)',
-              }}
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-navy-700/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              
-              <div className="relative z-10">
-                <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl text-white mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                  {service.icon}
-                </div>
-                
-                <h3 className="text-xl font-bold text-navy-800 mb-2 group-hover:text-orange-500 transition-colors duration-300">
-                  {service.title}
-                </h3>
-                
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  {service.description}
-                </p>
-              </div>
+            <FadeIn key={index} delay={index * 0.1}>
+              <Link
+                href={`/services/${service.slug}`}
+                className="group relative bg-white/80 backdrop-blur-sm p-8 rounded-3xl border border-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer block h-full"
+                style={{
+                  background: "linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.7) 100%)",
+                }}
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-navy-700/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
-              <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-orange-500/10 to-transparent rounded-3xl blur-2xl"></div>
-            </Link>
+                <div className="relative z-10">
+                  <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl text-white mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                    {service.icon}
+                  </div>
+                  <h3 className="text-xl font-bold text-navy-800 mb-2 group-hover:text-orange-500 transition-colors duration-300">
+                    {service.title}
+                  </h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">{service.description}</p>
+                </div>
+
+                <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-orange-500/10 to-transparent rounded-3xl blur-2xl"></div>
+              </Link>
+            </FadeIn>
           ))}
         </div>
       </div>

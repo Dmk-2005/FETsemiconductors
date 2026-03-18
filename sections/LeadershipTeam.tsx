@@ -27,9 +27,9 @@ export default function LeadershipTeam() {
   ];
 
   return (
-    <section className="py-24 bg-gray-50">
+    <section className="py-10 lg:py-14 bg-gray-50">
       <div className="container-custom">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <h2 className="text-4xl lg:text-5xl font-bold text-navy-800 mb-6">
             Meet Our Leadership Team
           </h2>

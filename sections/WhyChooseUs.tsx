@@ -73,9 +73,9 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-10 lg:py-14 bg-white">
       <div className="container-custom">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <h2 className="text-4xl lg:text-5xl font-bold text-navy-800 mb-6">
             Why Choose FET Semiconductors
           </h2>
@@ -84,7 +84,7 @@ export default function WhyChooseUs() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-4 gap-8 mb-20">
+        <div className="grid md:grid-cols-4 gap-8 mb-10">
           <div className="text-center p-8 bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl">
             <div className="text-5xl font-bold text-orange-500 mb-2">{counts.projects}+</div>
             <div className="text-navy-800 font-semibold">Projects Completed</div>

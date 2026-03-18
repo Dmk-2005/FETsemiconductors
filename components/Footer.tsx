@@ -39,7 +39,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
-              Leading provider of semiconductor design, manufacturing, and engineering services. 
+              Leading provider of semiconductor design and engineering services. 
               Delivering cutting-edge solutions for the electronics industry.
             </p>
             <div className="flex space-x-4">

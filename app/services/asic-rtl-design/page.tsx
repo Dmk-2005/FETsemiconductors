@@ -83,7 +83,7 @@ export default function AsicRtlDesignPage() {
 
   return (
     <>
-      <section className="relative pt-32 pb-20 bg-gradient-navy overflow-hidden min-h-[50vh] flex items-center">
+      <section className="relative bg-gradient-navy overflow-hidden flex items-center pt-36 pb-8">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 right-10 w-96 h-96 bg-orange-500 rounded-full blur-3xl"></div>
         </div>
@@ -102,7 +102,7 @@ export default function AsicRtlDesignPage() {
 
         <Link 
           href="/services/ip-soc-verification"
-          className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center transition-all duration-300 group"
+          className="absolute left-4 top-[60%] -translate-y-1/2 w-12 h-12 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center transition-all duration-300 group"
           aria-label="Previous Service"
         >
           <svg className="w-6 h-6 text-white group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -112,7 +112,7 @@ export default function AsicRtlDesignPage() {
 
         <Link 
           href="/services/physical-design-sta"
-          className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center transition-all duration-300 group"
+          className="absolute right-4 top-[60%] -translate-y-1/2 w-12 h-12 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center transition-all duration-300 group"
           aria-label="Next Service"
         >
           <svg className="w-6 h-6 text-white group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -121,7 +121,7 @@ export default function AsicRtlDesignPage() {
         </Link>
       </section>
 
-      <section className="py-20 lg:py-28 bg-white">
+      <section className="py-10 lg:py-14 bg-white">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-navy-800 mb-8 text-center">
@@ -145,7 +145,7 @@ export default function AsicRtlDesignPage() {
         </div>
       </section>
 
-      <section className="py-20 lg:py-28 bg-gray-50">
+      <section className="py-10 lg:py-14 bg-gray-50">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-navy-800 mb-12 text-center">
@@ -174,7 +174,7 @@ export default function AsicRtlDesignPage() {
         </div>
       </section>
 
-      <section className="py-20 lg:py-28 bg-white">
+      <section className="py-10 lg:py-14 bg-white">
         <div className="container-custom">
           <h2 className="text-3xl md:text-4xl font-bold text-navy-800 mb-12 text-center">
             Our ASIC / RTL Expertise
@@ -194,7 +194,7 @@ export default function AsicRtlDesignPage() {
         </div>
       </section>
 
-      <section className="py-20 lg:py-28 bg-gray-50">
+      <section className="py-10 lg:py-14 bg-gray-50">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-navy-800 mb-12 text-center">
@@ -223,7 +223,7 @@ export default function AsicRtlDesignPage() {
         </div>
       </section>
 
-      <section className="py-20 lg:py-28 bg-white">
+      <section className="py-10 lg:py-14 bg-white">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-navy-800 mb-12 text-center">
@@ -249,7 +249,7 @@ export default function AsicRtlDesignPage() {
         </div>
       </section>
 
-      <section className="py-20 lg:py-28 bg-gray-50">
+      <section className="py-10 lg:py-14 bg-gray-50">
         <div className="container-custom">
           <h2 className="text-3xl md:text-4xl font-bold text-navy-800 mb-12 text-center">
             Why Choose Us
@@ -274,7 +274,7 @@ export default function AsicRtlDesignPage() {
         </div>
       </section>
 
-      <section className="py-20 lg:py-28 bg-gradient-navy">
+      <section className="py-10 lg:py-14 bg-gradient-navy">
         <div className="container-custom text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Ready to Build Your Next-Generation Silicon?
@@ -290,3 +290,9 @@ export default function AsicRtlDesignPage() {
     </>
   );
 }
+
+
+
+
+
+
