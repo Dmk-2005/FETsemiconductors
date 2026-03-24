@@ -48,7 +48,7 @@ export default function Services() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <FadeIn key={index} delay={index * 0.1}>
-              <div className="bg-white p-8 rounded-xl border border-gray-200 card-hover h-full">
+              <div className="bg-white p-5 sm:p-8 rounded-xl border border-gray-200 card-hover h-full">
                 <div className="text-orange-500 mb-4">{service.icon}</div>
                 <h3 className="text-2xl font-bold text-navy-800 mb-3">{service.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{service.description}</p>

@@ -59,7 +59,7 @@ export default function EmirPage() {
 
   return (
     <>
-      <section className="relative bg-gradient-navy overflow-hidden flex items-center pt-36 pb-8">
+      <section className="relative bg-gradient-navy overflow-hidden flex items-center pt-24 sm:pt-28 lg:pt-36 pb-8">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 right-10 w-96 h-96 bg-orange-500 rounded-full blur-3xl"></div>
         </div>

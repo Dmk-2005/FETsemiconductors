@@ -27,8 +27,8 @@ export default function ContactForm() {
 
   return (
     <FadeIn>
-      <div className="bg-white p-8 rounded-xl border border-gray-200">
-      <h2 className="text-3xl font-bold text-navy-800 mb-6">Send us a Message</h2>
+      <div className="bg-white p-5 sm:p-8 rounded-xl border border-gray-200">
+      <h2 className="text-2xl sm:text-3xl font-bold text-navy-800 mb-6">Send us a Message</h2>
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
           <label htmlFor="name" className="block text-sm font-semibold text-navy-800 mb-2">
@@ -62,7 +62,7 @@ export default function ContactForm() {
           />
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid sm:grid-cols-2 gap-6">
           <div>
             <label htmlFor="company" className="block text-sm font-semibold text-navy-800 mb-2">
               Company

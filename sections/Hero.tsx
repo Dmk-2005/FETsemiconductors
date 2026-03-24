@@ -59,23 +59,23 @@ export default function Hero() {
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-500 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1.5s" }} />
       </div>
 
-      <div className="container-custom relative z-10 pt-32 pb-20">
+      <div className="container-custom relative z-10 pt-24 sm:pt-28 lg:pt-32 pb-16 lg:pb-20">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="text-white">
             <motion.h1
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
-              className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white mb-6"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white mb-4 sm:mb-6"
             >
-              Engineering the Future of
-              <span className="block text-orange-400 mt-2">Semiconductor Technology</span>
+              Engineering from legacy to next
+              <span className="block text-orange-400 mt-2">generation Silicon</span>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
-              className="text-xl text-gray-200 max-w-2xl leading-relaxed"
+              className="text-base sm:text-lg lg:text-xl text-gray-200 max-w-2xl leading-relaxed"
             >
               Delivering cutting-edge semiconductor engineering services and design solutions that enable the development of next-generation chips and innovative electronic products.
             </motion.p>

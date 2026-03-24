@@ -15,8 +15,8 @@ export default function ContactInfo() {
   return (
     <FadeIn delay={0.1}>
       <div className="space-y-8">
-      <div className="bg-white p-8 rounded-xl border border-gray-200">
-        <h2 className="text-3xl font-bold text-navy-800 mb-6">Contact Information</h2>
+      <div className="bg-white p-5 sm:p-8 rounded-xl border border-gray-200">
+        <h2 className="text-2xl sm:text-3xl font-bold text-navy-800 mb-6">Contact Information</h2>
         
         <div className="space-y-6">
           <div className="flex items-start">
@@ -62,8 +62,8 @@ export default function ContactInfo() {
         </div>
       </div>
 
-      <div className="bg-white p-8 rounded-xl border border-gray-200">
-        <h3 className="text-2xl font-bold text-navy-800 mb-6">Our Offices</h3>
+      <div className="bg-white p-5 sm:p-8 rounded-xl border border-gray-200">
+        <h3 className="text-xl sm:text-2xl font-bold text-navy-800 mb-6">Our Offices</h3>
         <div className="space-y-6">
           {offices.map((office, index) => (
             <div key={index} className="pb-6 border-b border-gray-200 last:border-b-0 last:pb-0">

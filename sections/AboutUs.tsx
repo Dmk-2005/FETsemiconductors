@@ -2,7 +2,7 @@ import FadeIn from "@/components/FadeIn";
 
 export default function AboutUs() {
   return (
-    <section className="py-10 lg:py-14 bg-gray-50">
+    <section className="py-6 bg-gray-50">
       <div className="container-custom">
         <FadeIn className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-navy-800 mb-8">

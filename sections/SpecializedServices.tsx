@@ -61,7 +61,7 @@ export default function SpecializedServices() {
             <FadeIn key={index} delay={index * 0.1}>
               <Link
                 href={`/services/${service.slug}`}
-                className="group relative bg-white/80 backdrop-blur-sm p-8 rounded-3xl border border-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer block h-full"
+                className="group relative bg-white/80 backdrop-blur-sm p-5 sm:p-8 rounded-3xl border border-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer block h-full"
                 style={{
                   background: "linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.7) 100%)",
                 }}

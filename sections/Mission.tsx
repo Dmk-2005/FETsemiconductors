@@ -56,7 +56,7 @@ export default function Mission() {
             </p>
           </FadeIn>
           <FadeIn delay={0.15}>
-            <div className="bg-gradient-to-br from-navy-700 to-navy-900 p-12 rounded-2xl text-white">
+            <div className="bg-gradient-to-br from-navy-700 to-navy-900 p-6 sm:p-12 rounded-2xl text-white">
               <h3 className="text-3xl font-bold mb-6">Our Vision</h3>
               <p className="text-lg text-gray-300 leading-relaxed">
                 To be the global leader in semiconductor innovation, recognized for our technical

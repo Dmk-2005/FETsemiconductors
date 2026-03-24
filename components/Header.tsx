@@ -27,7 +27,7 @@ export default function Header() {
               alt="FET Semiconductors" 
               width={600} 
               height={150}
-              className="w-48 md:w-56 lg:w-64 h-auto"
+              className="w-36 sm:w-44 md:w-56 lg:w-64 h-auto"
               priority
             />
           </Link>
@@ -78,7 +78,7 @@ export default function Header() {
         </div>
 
         {isMobileMenuOpen && (
-          <div className="lg:hidden mt-4 py-4 bg-white rounded-lg shadow-xl">
+          <div className="lg:hidden mt-2 pb-4 bg-white border-t border-gray-100">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -93,6 +93,15 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
+            <div className="px-4 pt-3 border-t border-gray-100 mt-2">
+              <Link
+                href="/contact"
+                className="block w-full text-center bg-orange-500 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-orange-600"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Get Started
+              </Link>
+            </div>
           </div>
         )}
       </nav>
