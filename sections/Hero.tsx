@@ -66,10 +66,11 @@ export default function Hero() {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white mb-4 sm:mb-6"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6"
             >
-              Engineering from legacy to next
-              <span className="block text-orange-400 mt-2">generation Silicon</span>
+              <span className="block mb-3">Engineering from</span>
+              <span className="block mb-3">Legacy to Next</span>
+              <span className="block text-orange-400 mt-2">Generation Silicon</span>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 40 }}

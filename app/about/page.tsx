@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import AboutHero from "@/sections/AboutHero";
 import Mission from "@/sections/Mission";
-import Team from "@/sections/Team";
 import Timeline from "@/sections/Timeline";
 import CTA from "@/sections/CTA";
 
@@ -16,7 +15,6 @@ export default function AboutPage() {
       <AboutHero />
       <Mission />
       <Timeline />
-      <Team />
       <CTA />
     </>
   );

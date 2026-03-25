@@ -10,7 +10,7 @@ export default function AboutHero() {
             About FET Semiconductors
           </h1>
           <p className="text-base sm:text-xl text-gray-300 leading-relaxed">
-            For over 25 years, we've been pioneering innovation in semiconductor technology,
+            We've been pioneering innovation in semiconductor technology,
             delivering world-class solutions that power the future of electronics.
           </p>
         </div>

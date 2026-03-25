@@ -12,8 +12,8 @@ export default function Footer() {
     ],
     services: [
       { label: "Chip Design", href: "/services" },
-      { label: "Manufacturing", href: "/services" },
-      { label: "Testing & QA", href: "/services" },
+      { label: "Verification & Validation", href: "/services" },
+      { label: "Power Optimization", href: "/services" },
       { label: "Consulting", href: "/services" },
     ],
     resources: [
