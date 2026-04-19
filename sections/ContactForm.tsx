@@ -22,7 +22,7 @@ export default function ContactForm() {
     e.preventDefault();
 
     const subject = encodeURIComponent(
-      `Contact Form – ${formData.from_name}${formData.company ? ` (${formData.company})` : ""}`
+      `Contact Form - ${formData.from_name}${formData.company ? ` (${formData.company})` : ""}`
     );
     const body = encodeURIComponent(
       `Name: ${formData.from_name}\nEmail: ${formData.from_email}\nCompany: ${formData.company || "N/A"}\nPhone: ${formData.phone || "N/A"}\nService Interest: ${formData.service || "N/A"}\n\nMessage:\n${formData.message}`
@@ -48,8 +48,8 @@ export default function ContactForm() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
             </svg>
           </div>
-          <h3 className="text-2xl font-bold text-navy-800 mb-2">Message Sent!</h3>
-          <p className="text-gray-500">Thank you for reaching out. We'll get back to you within 24 hours.</p>
+          <h3 className="text-2xl font-bold text-navy-800 mb-2">Gmail Opened!</h3>
+          <p className="text-gray-500">Your message details have been pre-filled in Gmail. Just hit send.</p>
         </div>
       </FadeIn>
     );
@@ -103,10 +103,7 @@ export default function ContactForm() {
             <textarea id="message" name="message" required rows={5} value={formData.message} onChange={handleChange} className={inputClass + " resize-none"} placeholder="Tell us about your project..." />
           </div>
 
-          <button
-            type="submit"
-            className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3.5 rounded-xl transition-all duration-300 hover:shadow-lg text-sm tracking-wide"
-          >
+          <button type="submit" className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3.5 rounded-xl transition-all duration-300 hover:shadow-lg text-sm tracking-wide">
             Send Message →
           </button>
         </form>
