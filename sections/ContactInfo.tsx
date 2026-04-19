@@ -61,7 +61,7 @@ export default function ContactInfo() {
         </svg>
       ),
       label: "Business Hours",
-      value: "Mon – Fri, 8 AM – 6 PM PST",
+      value: "Mon – Fri, 8 AM – 6 PM IST",
       href: null,
     },
   ];

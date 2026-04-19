@@ -29,13 +29,13 @@ export default function Footer() {
       <div className="container-custom py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           <div className="lg:col-span-2">
-            <div className="mb-6">
+            <div className="mb-6 bg-white inline-block rounded-xl px-4 py-3 shadow-sm">
               <Image 
                 src="/logo.png.png" 
                 alt="FET Semiconductors" 
                 width={320} 
                 height={80}
-                className="h-16 w-auto"
+                className="h-20 w-auto"
               />
             </div>
             <p className="text-gray-400 mb-6 max-w-md">

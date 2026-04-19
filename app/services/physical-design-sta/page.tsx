@@ -56,7 +56,7 @@ export default function PhysicalDesignStaPage() {
         <div className="container-custom relative z-10">
           <div className="max-w-4xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Physical Design & STA Services
+              Physical Design and STA
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed">
               From RTL to Signoff. Performance Engineered.
