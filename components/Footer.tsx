@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import VisitorCounter from "@/components/VisitorCounter";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -102,11 +103,12 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-navy-800 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm mb-4 md:mb-0">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-gray-400 text-sm text-center md:text-left">
               © {currentYear} FET Semiconductors Pvt Ltd. All rights reserved.
             </p>
-            <div className="flex space-x-6 text-sm">
+            <div className="flex flex-wrap items-center justify-center gap-4 text-sm">
+              <VisitorCounter />
               <Link href="#" className="text-gray-400 hover:text-orange-500 transition-colors duration-300">
                 Privacy Policy
               </Link>
